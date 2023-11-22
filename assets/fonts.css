@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Croissant+One&family=Josefin+Sans&family=Libre+Baskerville:ital@1&family=Lobster&family=Montserrat:wght@200;500&family=Pacifico&family=Plus+Jakarta+Sans:wght@200&family=Satisfy&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.titulo {
+  color: #a35c83;
+  font-family: Pacifico;
+  font-weight: 500;
+  font-size: 50px;
+}
+.text-img{
+  color: white;
+  font-weight: 200;
+  font-family: Bebas Neue;
+  font-size: 80px;
+  align-items: right;
+}

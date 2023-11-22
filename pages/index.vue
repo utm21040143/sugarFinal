@@ -1,87 +1,43 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
+  <v-row class="ma-0 pa-0">
+    <v-card class="ma-0 pa-0" width="100%">
+      <carouselVue/>
+      <v-row class="ma-0 pa-0" style="display:flex">
+        <v-row class="ma-0 pa-0">
+            <card-template/>
+        </v-row>
+      </v-row>
+      <v-card class="ma-0 pa-0" color="#FF787B" max-width="100%" height="500px" elevation="0" tile>
+        <v-row class="ma-0 pa-0" justify="center" style="height:100%" align="center">
+          <v-col cols="6" class="ma-0 pa-0">
+            <v-row class="ma-0 pa-0" justify="center" align="center">
+              <img src="~/static/navidenas.jpg" style="max-width: 100%" />
+            </v-row>
+          </v-col>
+          <v-col cols="6" class="ma-0 pa-0">
+            <v-row class="ma-0 pa-0" justify="center" align="center">
+              <img src="~/static/brownies_nav.jpg" style="max-width: 100%"/>
+            </v-row>
+          </v-col>
+        </v-row>
       </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation </a
-            >.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br />
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
+    </v-card>
   </v-row>
 </template>
 
 <script>
+import CardTemplate from '~/components/cardTemplate.vue'
+import carouselVue from '~/components/carousel.vue'
 export default {
-  name: 'IndexPage',
-}
+  components:{carouselVue, CardTemplate},
+    data: () => ({
+
+    }),
+  }
+
+
 </script>
+
+<style>
+
+</style>
