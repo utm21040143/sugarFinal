@@ -6,7 +6,16 @@
         <v-row class="ma-0 pa-0">
             <card-template/>
         </v-row>
-        <images-ins/>
+        <v-expand-transition>
+          <v-row class="ma-0 pa-0" v-show="$store.state.show" style="width:100%">
+            <v-card width="100%" height="100dvh" elevation="0" tile color="black">
+              <video-player :src="video"/>
+            </v-card>
+          </v-row>
+        </v-expand-transition>
+        </v-row>
+        <v-row>
+         <images-ins/>
         </v-row>
         <br>
         <h1 class="title3">Productos de Temporada</h1>
@@ -35,13 +44,14 @@ import CardTemplate from '~/components/cardTemplate.vue'
 import carouselVue from '~/components/carousel.vue'
 import FooterFinal from '~/components/footerFinal.vue'
 import imagesIns from '~/components/imagesIns.vue'
+import VideoPlayer from "nuxt-video-player";
+require("nuxt-video-player/src/assets/css/main.css");
 export default {
-  components:{carouselVue, CardTemplate, imagesIns, FooterFinal},
+  components:{carouselVue, CardTemplate, imagesIns, FooterFinal, VideoPlayer},
     data: () => ({
-
+      video:'video-page.mp4'
     }),
   }
-
 
 </script>
 

@@ -7,23 +7,11 @@
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7"
     >
-      <v-toolbar-title class="titulo">
+      <v-toolbar-title class="titulo" >
       Sugar Crumbles</v-toolbar-title>
 
       <v-spacer></v-spacer>
-
-      <v-btn icon
-      to="\login"
-      >
-        <v-icon>mdi-account</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-cart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
+      <v-toolbar-title class="titulohead">
+      Porque siempre hay espacio para el postre!</v-toolbar-title>
     </v-app-bar>
 </template>

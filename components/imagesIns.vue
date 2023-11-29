@@ -1,15 +1,14 @@
 <template>
   <v-row>
     <v-col
-     color= "#C9E5FF"
-      v-for="n in 9"
-      :key="n"
-      class="d-flex child-flex"
-      cols="4"
+      v-for="(image, index) in images"
+      :key="index"
+      class="d-flex child-flex galeria"
+      cols="3"
     >
       <v-img
-        :src="`https://images.pexels.com/photos/267308/pexels-photo-267308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2${n * 5 + 10}`"
-        :lazy-src="`https://images.pexels.com/photos/267308/pexels-photo-267308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2=${n * 5 + 10}`"
+        :src="requireImages(`${Object.values(image)[0]}`)"
+        :lazy-src="requireImages(`${Object.values(image)[0]}`)"
         aspect-ratio="1"
         class="grey lighten-2"
       >
@@ -29,3 +28,32 @@
     </v-col>
   </v-row>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      images: [
+        { img1: "chispas.jpg" },
+        { img2: "dos_roles.jpg" },
+        { img3: "galletas.jpg" },
+        { img4: "chunky-cooki.jpg" },
+        { img5: "navidad-cs.jpg" },
+        { img6: "muffin.jpg" },
+        { img7: "rol.jpg" },
+        { img8: "browniech.jpg" },
+        { img9: "muffinrosa.jpg" },
+        { img10: "red-velvet.jpg" },
+        { img11: "jengibre.jpg" },
+        { img12: "browni2.jpg" },
+      ],
+    };
+  },
+  methods: {
+    requireImages(filename) {
+      const images = require.context('@/static', false, /\.jpg$/);
+      return images(`./${filename}`);
+    },
+  },
+};
+</script>

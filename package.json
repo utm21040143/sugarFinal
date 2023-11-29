@@ -12,8 +12,10 @@
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
+    "nuxt-video-player": "^1.0.17",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.0.2",
     "@nuxtjs/vuetify": "^1.12.3",
+    "@types/d3": "^7.4.3",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.7.1"
   }

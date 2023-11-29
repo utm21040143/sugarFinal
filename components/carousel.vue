@@ -1,5 +1,5 @@
 <template>
-  <v-carousel cycle v-model="model" hide-delimiter-background hide-delimiters :show-arrows="false">
+  <v-carousel cycle v-model="model" hide-delimiter-background hide-delimiters :show-arrows="false" class="carro">
     <v-carousel-item v-for="(item) in images" :key="item" :src="item">
       <v-row
         class="ma-0 fill-height"

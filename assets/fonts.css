@@ -13,12 +13,14 @@
   font-weight: 500;
   font-size: 50px;
 }
+
 .text-img{
   color: white;
   font-weight: 200;
   font-family: Bebas Neue;
   font-size: 80px;
   align-items: flex-start !important;
+  text-align: center;
 
 }
 #title-card{
@@ -63,11 +65,29 @@
 .footerfin {
   align-items: center;
   text-align: center;
-  font-family: Montserrat;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 
 }
 .white--text1{
   font-family: Pacifico;
 }
-
+.titulohead {
+  font-family: Anton;
+}
+.v-footer{
+width: 100dvw !important;
+background-color: #e996c3;
+}
+.v-card-text {
+  background-color: #e996c3;
+}
+.carro{
+  max-height: 70dvh;
+}
+.galeria{
+  background-color: rgb(180, 164, 208);
+}
+video-player{
+  max-height: max-content;
+}
