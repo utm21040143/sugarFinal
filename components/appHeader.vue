@@ -12,7 +12,9 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
+      <v-btn icon
+      to="\login"
+      >
         <v-icon>mdi-account</v-icon>
       </v-btn>
 

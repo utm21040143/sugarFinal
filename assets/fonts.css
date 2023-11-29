@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Croissant+One&family=Josefin+Sans&family=Libre+Baskerville:ital@1&family=Lobster&family=Montserrat:wght@200;500&family=Pacifico&family=Plus+Jakarta+Sans:wght@200&family=Satisfy&display=swap');
 
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+
 
 .titulo {
   color: #a35c83;
@@ -13,5 +18,56 @@
   font-weight: 200;
   font-family: Bebas Neue;
   font-size: 80px;
-  align-items: right;
+  align-items: flex-start !important;
+
 }
+#title-card{
+  font-size: 70px;
+  color: #a35c83;
+  font-family: Smooch Sans;
+  font-style: bold;
+}
+.principal{
+  display: flex;
+  position: relative;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+
+}
+.title3 {
+  color: #5c81a3;
+  font-family: Smooch Sans;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+.card__footer{
+  display: flex;
+  position: relative;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.v-card__actions{
+  display: flex;
+  position: relative;
+  align-items: center;
+
+}
+
+.footerfin {
+  align-items: center;
+  text-align: center;
+  font-family: Montserrat;
+  color: white;
+
+}
+.white--text1{
+  font-family: Pacifico;
+}
+

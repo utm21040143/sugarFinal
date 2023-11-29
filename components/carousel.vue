@@ -7,7 +7,7 @@
         justify="center"
       >
         <div class="text-img" >
-          VISITA NUESTRA TIENDA EN LÍNEA
+          La mejor repostería artesanal
         </div>
       </v-row>
     </v-carousel-item>
