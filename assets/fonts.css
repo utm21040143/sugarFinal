@@ -87,7 +87,10 @@ background-color: #e996c3;
 }
 .galeria{
   background-color: rgb(180, 164, 208);
+  margin-top: 10px;
 }
-video-player{
-  max-height: max-content;
+.video-container {
+  margin-bottom: 20px; 
+  z-index: 1;
+  position: absolute;
 }

@@ -31,6 +31,7 @@
 
                   <div class="text--primary principal">
                     {{ item.description }}<br/>
+                    <img :src="img">
                   </div>
                 </v-card-text>
             </v-card>
@@ -44,6 +45,7 @@
 export default {
   data: () => ({
     whats:'https://wa.me/4495768851',
+    img: 'panadero.png',
     card: [
       {
         title: 'Postre Artesanal',
@@ -51,9 +53,8 @@ export default {
           'En una pastelería artesanal, los dulces y postres se elaboran con recetas tradicionales, pero también se experimenta con nuevas técnicas y sabores. Los pasteleros artesanales ponen todo su corazón en su trabajo, y eso se nota en el sabor y la apariencia de los dulces y postres que elaboran.',
       },
       {
-        title: 'sapo',
-        description: 'asfasf asfasf asfasf asfasf asfasf asfasf asfasf asfasf asfasf asfasf asfasf asfasf',
-        img:"gifg.gif"
+        title: '',
+        description: '',
       },
       {
         title: 'El amor forma parte de nuestra historia',

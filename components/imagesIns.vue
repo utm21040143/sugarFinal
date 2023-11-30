@@ -3,7 +3,7 @@
     <v-col
       v-for="(image, index) in images"
       :key="index"
-      class="d-flex child-flex galeria"
+      class="d-relative child-relative galeria"
       cols="3"
     >
       <v-img
